@@ -10,10 +10,16 @@ package animalworld;
  * @author jword
  */
 public class World {
-    Dog dog;
+    
+    Animal[] animals = new Animal[10];
     
     public World() {
-        dog = new Dog();
-        dog.speak();
+        //Polymorphism - "dog" is a Dog and Animal at the same time
+        animals[0] = new Dog();
+        animals[1] = new Pig("Chris", "rainbow");
+        
+        for (Animal animal : animals) {
+            animal.speak();
+        }
     }
 }
