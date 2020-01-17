@@ -11,7 +11,7 @@ package animalworld;
  */
 public class World {
     
-    Animal[] animals = new Animal[10];
+    Animal[] animals = new Animal[2];
     
     public World() {
         //Polymorphism - "dog" is a Dog and Animal at the same time
@@ -19,7 +19,11 @@ public class World {
         animals[1] = new Pig("Chris", "rainbow");
         
         for (Animal animal : animals) {
+            //speak() of subclass is called
             animal.speak();
+            //Netbeans tries to call subclass method
+            //, then moves up to superclass
+            animal.eat();
         }
     }
 }
