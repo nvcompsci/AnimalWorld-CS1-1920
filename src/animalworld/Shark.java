@@ -9,13 +9,13 @@ package animalworld;
  *
  * @author jword
  */
-public class Pig extends Animal implements Food {
-    public Pig(String name, String color) {
+public class Shark extends Animal {
+    public Shark(String name, String color) {
         super(name, color);
     }
     
     @Override
     public void speak() {
-        System.out.println("oink");
+        System.out.println("duh duh");
     }
 }

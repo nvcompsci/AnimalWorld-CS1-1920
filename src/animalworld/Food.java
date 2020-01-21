@@ -9,13 +9,6 @@ package animalworld;
  *
  * @author jword
  */
-public class Pig extends Animal implements Food {
-    public Pig(String name, String color) {
-        super(name, color);
-    }
+public interface Food {
     
-    @Override
-    public void speak() {
-        System.out.println("oink");
-    }
 }
